@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Drift Inside of Iframe Sandbox</title>
+  <meta charset="UTF-8" />
+  <script src="drift-snippet.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-219162652-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-219162652-1');
+</script>
+ <script>/*
+window.onload = function(){
+ setTimeout(function(){
+   document.getElementById('drift-iframe').src = 'your url';
+ },5000);
+};*/
+ 
+ </script>
+</head>
+
+<body>
+  <!-- <div id="app"></div> -->
+  <p>index.html</p>
+  <!--<iframe style="min-height: 670px; width: 650px;" id="drift-iframe" src="drift-frame.html"></iframe>-->
+  <iframe id="drift-iframe" src="drift-frame.html" style="border:0"></iframe> 
+  <h1>Hello</h1>
+</body>
+
+</html>
